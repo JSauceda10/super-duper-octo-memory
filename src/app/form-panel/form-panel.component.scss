@@ -1,0 +1,54 @@
+.flex-grow-1 {
+    flex-grow: 1 !important;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  div {
+    display: block;
+  }
+  
+  .content-droppable-zone{
+    padding: 0 15px;
+    margin: 0 15px;
+  }
+  
+  .content-droppable-zone {
+    overflow-y: auto;
+  }
+  
+  .property-column, .content-droppable-zone {
+    box-shadow: 0 0 9px -4px #000;
+  }
+  
+  .email-body {
+    height: calc(100vh - 100px) !important;
+    overflow-y: auto;
+    overflow-y: overlay;
+  }
+  
+  .align-items-start {
+    align-items: flex-start !important;
+  }
+  
+  .d-flex {
+    display: flex !important;
+  }
+  
+  .mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  
+  .customPlaceHolder {
+    padding: 20px 10px;
+    background: lightgray;
+    border: solid 1px dashed;
+  }
+
+  #form-renderer{
+    background-color: #000;
+    height: 35px;
+  }

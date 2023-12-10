@@ -1,0 +1,34 @@
+<div class="panel-elements pt-0">
+    <div class="email-structure"
+         cdkDropList
+         id="list2" cdkDropListSortingDisabled
+         [cdkDropListConnectedTo]="['list1']"
+         [cdkDropListData]="elements"
+         >
+  
+      <div placement="right" container="body" triggers="manual" class="component section-component rounded" (click)="showPopup()">
+        <p><i class="fas fa-columns fa-2x"></i></p>
+        <span translate>Section</span>
+  
+        <div class="popup" *ngIf="isPopupVisible">
+          <div class="title">
+            <p>section list</p>
+            <i class="fa-solid fa-xmark" (click)="closePopup($event)"></i>
+          </div>
+    
+          <app-section-list></app-section-list>
+        </div>
+  
+  
+      </div>
+  
+      
+      
+  
+      <div *ngFor="let component of elements" class="component rounded" cdkDrag>
+        <p><i class="{{component.icon}}"></i></p>
+        <span translate>{{component.name}}</span>
+      </div>
+  
+    </div>
+  </div>
