@@ -11,9 +11,21 @@ import { CdkDrag, CdkDropList } from '@angular/cdk/drag-drop';
 export class SectionListComponent {
   draggableSectionList: any[] = [
     {
-      FormItemType: FormItemType.SECTION,
-      //TODO: Add different values based on different section types
+      formItemType: FormItemType.SECTION,
+      sections: 1,//TODO: Add different values based on different section types
     },
+    {
+      formItemType: FormItemType.SECTION,
+      sections: 2,
+    },
+    {
+      formItemType: FormItemType.SECTION,
+      sections: 3,
+    },
+    {
+      formItemType: FormItemType.SECTION,
+      sections: 4,
+    }
   ];
 
 

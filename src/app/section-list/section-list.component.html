@@ -1,6 +1,17 @@
-<div id="section-list" [cdkDropListConnectedTo]="['form-renderer']" cdkDropList [cdkDropListData]="draggableSectionList">
+<div id="section-list" cdkDropListSortingDisabled [cdkDropListConnectedTo]="['form-renderer']" cdkDropList [cdkDropListData]="draggableSectionList">
 
-    <div class="section" cdkDrag [cdkDragData]="draggableSectionList[0]">
-
-    </div>
+    @for(sectionItem of draggableSectionList; track sectionItem.sections){
+        <div class = "list-items" cdkDrag  [cdkDragData]="sectionItem">
+            @for (item of [].constructor(sectionItem.sections); track $index) {
+                
+                <div class="section" >
+                    
+                </div>
+            
+            }
+        </div>
+        
+        
+    }
+    
 </div>
